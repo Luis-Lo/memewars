@@ -1,0 +1,35 @@
+
+
+import javax.swing.*;
+import java.awt.*;
+
+public class main {
+
+
+
+    public static void main(String[] args) {
+
+
+        JFrame frame = new JFrame("Meme Wars");
+
+        frame.setSize(1000,700);
+        frame.getContentPane().setBackground(Color.pink);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        //creates Jpanel
+        JPanel panel = new JPanel();
+
+        //creates mainMenu object
+        mainMenu menu = new mainMenu();
+
+        frame.add(panel);
+
+        //calls the placement function of m
+        menu.placement(panel);
+
+        frame.setVisible(true);
+
+    }
+
+
+}
